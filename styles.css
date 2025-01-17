@@ -2,9 +2,11 @@
     --background-color: #E2E8F0;
     --sidebar-color: #1992D4;
     --white: #FFFFFF;
+    --yellow: #F0B429;
 }
 
 * {
+    font-family: arial;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,15 +15,27 @@
 body {
     background-color: var(--background-color);
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 250px 1fr;
 }
 
 .sidebar {
     background-color: var(--sidebar-color);
-    border-right: solid black 2px;
     position: sticky;
     height: 100vh;
     top: 0;
+}
+
+.link-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+.link-grid p {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--white);
 }
 
 .row {
@@ -41,14 +55,16 @@ body {
     background-color: var(--white);
 }
 
-.content {
-    background-color: #E2E8F0;
-}
-
 .content-grid {
     display: grid;
-    grid-template-columns: 2fr 300px; 
-    gap: 32px;
+    grid-template-columns: 2fr 280px; 
+    gap: 24px;
+    padding: 32px 24px;
+}
+
+.title {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 .project-grid {
@@ -59,14 +75,23 @@ body {
 
 .sub-grid {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 18px 250px;
+    gap: 32px;
 }
 
 .card {
     background-color: var(--white);
     border-radius: 12px;
     padding: 24px 18px;
-    border: solid 2px black;
+    border-left: solid 8px var(--yellow);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+.blank-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 24px 18px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
 }
 
 .mb-32 {
