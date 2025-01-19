@@ -36,6 +36,7 @@ body {
 
 /* How do I change the color of svg??? */
 .icon {
+    fill: #FFF;
     width: 28px;
 }
 
