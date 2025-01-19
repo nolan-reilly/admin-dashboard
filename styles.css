@@ -6,7 +6,7 @@
 }
 
 * {
-    font-family: arial;
+    font-family: "Roboto", serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -34,16 +34,25 @@ body {
     margin-bottom: 32px;
 }
 
-/* How do I change the color of svg??? */
-.icon {
-    fill: #FFF;
-    width: 28px;
+.lg-icon {
+    width: 48px;
 }
 
 .link-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
+}
+
+.icon {
+    width: 32px;
+}
+
+.link-text {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
 }
 
 .link-grid p {
@@ -87,6 +96,22 @@ body {
     background-color: var(--white);
     padding: 24px 32px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.search-input {
+    border: none;
+    background-color: #E2E8F0;
+    border-radius: 24px;
+    padding: 12px 16px;
+}
+
+.profile-pic {
+    width: 64px;
+}
+
+.lg-name {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .content-grid {

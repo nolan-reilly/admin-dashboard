@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="sidebar">
         <div class="row align-center gap-16 mb-sm">
-            <img class="icon" src="icons/view-dashboard.svg" alt="dashboard">
+            <img class="lg-icon" src="icons/view-dashboard.svg" alt="dashboard">
             <p class="link-title">Dashboard</p>
         </div>
 
@@ -17,43 +20,47 @@
             <div>
                 <div class="row align-center gap-16">
                     <img class="icon" src="icons/home.svg" alt="home-icon">
-                    <p class="link-text">Home</p>
+                    <a class="link-text" href="#">Home</a>
                 </div>
                 
                 <div class="row align-center gap-16">
                     <img class="icon" src="icons/account.svg" alt="notes">
-                    <p>Profile</p>
+                    <a class="link-text" href="#">Profile</a>
                 </div>
+
                 <div class="row align-center gap-16">
                     <img src="icons/message.svg" alt="messages" class="icon">
-                    <p>Messages</p>
+                    <a class="link-text" href="#">Messages</a>
                 </div>
+
                 <div class="row align-center gap-16">
                     <img src="icons/history.svg" alt="history" class="icon">
-                    <p>History</p>
+                    <a class="link-text" href="#">History</a>
                 </div>
+
                 <div class="row align-center gap-16">
                     <img src="icons/note-multiple-outline.svg" alt="" class="icon">
-                    <p>Tasks</p>
+                    <a class="link-text" href="#">Tasks</a>
                 </div>
+
                 <div class="row align-center gap-16">
                     <img src="icons/account-group.svg" alt="people" class="icon">
-                    <p>Communities</p>
+                    <a class="link-text" href="#">Communities</a>
                 </div>
             </div>
     
             <div>
                 <div class="row align-center gap-16">
                     <img src="icons/cog.svg" alt="settings" class="icon">
-                    <p>Settings</p>
+                    <a class="link-text" href="#">Settings</a>
                 </div>
                 <div class="row align-center gap-16">
                     <img src="icons/help-box.svg" alt="help" class="icon">
-                    <p>Support</p>
+                    <a class="link-text" href="#">Support</a>
                 </div>
                 <div class="row align-center gap-16">
                     <img src="icons/shield-check.svg" alt="privacy" class="icon">
-                    <p>Privacy</p>
+                    <a class="link-text" href="#">Privacy</a>
                 </div>
             </div>
         </div>
@@ -63,12 +70,16 @@
         <div class="header col gap-32">
             <!-- Top Area -->
             <div class="row space-between">
-                <p>Search bar</p>
+                <div class="row gap-16 align-center grow">
+                    <img class="icon" src="icons/search-web.svg" alt="search">
+                    <input class="search-input" type="text">
+                </div>
 
-                <div class="row">
-                    <p>notification</p>
-                    <p>Pic</p>
-                    <p>Name</p>
+
+                <div class="row gap-32 align-center">
+                    <img class="icon" src="icons/bell-ring.svg" alt="bell">
+                    <img class="profile-pic" src="pfp.jpeg" alt="profile picture">
+                    <p class="lg-name">Nolan Reilly</p>
                 </div>
             </div>
 
