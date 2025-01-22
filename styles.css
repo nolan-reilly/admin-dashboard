@@ -22,6 +22,8 @@ body {
     grid-template-columns: 300px 1fr;
 }
 
+/* ----- Sidebar Styles ----- */
+
 .sidebar {
     background-color: var(--sidebar-color);
     position: sticky;
@@ -30,67 +32,36 @@ body {
     padding: 24px;
 }
 
-.mb-sm {
-    margin-bottom: 32px;
-}
-
-.lg-icon {
-    width: 48px;
-}
-
-.link-grid {
+.sidebar-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
 }
 
-.icon {
-    width: 32px;
+.sidebar-title {
+    font-size: 32px;
+    color: var(--white);
+    font-weight: bold;
 }
 
-.link-text {
+.sidebar-link {
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
     color: white;
 }
 
-.link-grid p {
+.sidebar-grid p {
     font-size: 20px;
     font-weight: bold;
     color: var(--white);
 }
 
-.link-grid div div {
+.sidebar-grid div div {
     margin-bottom: 18px;
 }
 
-.link-title {
-    font-size: 32px;
-    color: var(--white);
-    font-weight: bold;
-}
-
-.row {
-    display: flex;
-}
-
-.gap-16 {
-    gap: 16px;
-}
-
-.col {
-    display: flex;
-    flex-direction: column;
-}
-
-.space-between {
-    justify-content: space-between;
-}
-
-.align-center {
-    align-items: center;
-}
+/* ----- Header Styles ----- */
 
 .header {
     background-color: var(--white);
@@ -114,16 +85,60 @@ body {
     font-weight: bold;
 }
 
+.lg-icon {
+    width: 48px;
+}
+
+.icon {
+    width: 32px;
+}
+
+/* ------ Flex Styles ------ */
+
+.row {
+    display: flex;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.gap-32 {
+    gap: 32px;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.gap-12 {
+    gap: 12px;
+}
+
+/* Grid Styles */
+
 .content-grid {
     display: grid;
-    grid-template-columns: 2fr 400px; 
+    grid-template-columns: 3fr 1fr; 
     gap: 24px;
     padding: 32px 24px;
 }
 
-.title {
-    grid-column-start: 1;
-    grid-column-end: 3;
+.grid-col-span-2 {
+    grid-column: span 2;
 }
 
 .project-grid {
@@ -134,9 +149,17 @@ body {
 
 .sub-grid {
     display: grid;
-    grid-template-rows: 18px 250px;
+    grid-template-columns: 1fr;
     gap: 32px;
 }
+
+.sub-grid > div {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 32px;
+}
+
+/* ----- Card Styles ----- */
 
 .card {
     background-color: var(--white);
@@ -153,10 +176,18 @@ body {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
 }
 
-.mb-32 {
-    margin-bottom: 32px;
+.project-card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
 }
 
-.gap-32 {
-    gap: 32px;
+.project-card-text {
+    color: #979797;
+}
+
+/* Misc Styles */
+
+.mb-32 {
+    margin-bottom: 32px;
 }
