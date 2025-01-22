@@ -3,6 +3,7 @@
     --sidebar-color: #1992D4;
     --white: #FFFFFF;
     --yellow: #F0B429;
+    --light-gray: #979797;
 }
 
 * {
@@ -73,11 +74,20 @@ body {
     border: none;
     background-color: #E2E8F0;
     border-radius: 24px;
-    padding: 12px 16px;
+    padding: 8px 16px;
 }
 
 .profile-pic {
     width: 64px;
+}
+
+.profile-pic-sm {
+    width: 48px;
+    height: 48px;
+}
+
+.responsive-profile-pic {
+    width: 100%;
 }
 
 .lg-name {
@@ -90,7 +100,7 @@ body {
 }
 
 .icon {
-    width: 32px;
+    width: 28px;
 }
 
 /* ------ Flex Styles ------ */
@@ -116,8 +126,20 @@ body {
     align-items: center;
 }
 
+.grow {
+    flex: 1;
+}
+
+.gap-128 {
+    gap: 128px;
+}
+
 .gap-32 {
     gap: 32px;
+}
+
+.gap-24 {
+    gap: 24px;
 }
 
 .gap-16 {
@@ -126,6 +148,10 @@ body {
 
 .gap-12 {
     gap: 12px;
+}
+
+.gap-6 {
+    gap: 6px;
 }
 
 /* Grid Styles */
@@ -183,11 +209,40 @@ body {
 }
 
 .project-card-text {
-    color: #979797;
+    color: var(--light-gray);
 }
 
 /* Misc Styles */
 
-.mb-32 {
-    margin-bottom: 32px;
+.btn {
+    background-color: var(--sidebar-color);
+    color: var(--white);
+    border: none;
+    padding: 16px 32px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.lg-text {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.small-gray-text {
+    font-size: 14px;
+    color: var(--light-gray);
+}
+
+.content-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.rounded {
+    border-radius: 100%;
 }
